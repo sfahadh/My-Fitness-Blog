@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Products</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+</head>
+
+<body>
+    <!-- **************** NAVBAR STRUCTURE **************** -->
+    <nav>
+        <div class="brand">
+            <img src="../images/BrandLogo.jpeg" alt="">
+        </div>
+
+        <div class="pages">
+            <a href="../index.html"><span id="logoName">Fahad Hussain</span></a>
+            <a href="articles.html"><span>ARTICLES</span></a>
+            <a href="Services.html"><span>SERVICES</span></a>
+            <a href="About.html"><span>ABOUT ME</span></a>
+            <a href="Products.html"><span>PRODUCTS</span></a>
+            <a href="Contacts.html"><span>CONTACT</span></a>
+            <div></div>
+            <div class="icons">
+                <a href="https://www.youtube.com/channel/UCG9_8NHe_piQJ8i3WSyzdcQ"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com/fahad.hussain23"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://gymbox.com/404"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/fahad_owns_u/?hl=en"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!-- **************** NAVBAR STRUCTURE **************** -->
+    <div id="products">
+        <h1>Calculate Energy Expenditure</h1>
+        <hr>
+        <div class="items">
+            <div class="firstItem">
+                <img src="../images/HumanEnergy2.jpg" alt="">
+            </div>
+            <div class="firstItemInfo">
+                <h2>Find Your RMR</h2>
+                <p>Find out what your Resting Metabolic Rate (RMR) by clicking on the button below. If you're unsure of
+                    what RMR is, please refer to the article on "The Basis of All Diets: Energy Conservation." Finding
+                    your RMR will be be needed to find your TDEE</p>
+                <button onclick="oneModal(3)" id="messenger1" class="messengerClass">FIND OUT</button>
+            </div>
+
+            <div></div>
+
+            <div class="secondItem">
+                <img src="../images/HumanEnergy.jpg" alt="">
+            </div>
+            <div class="secondItemInfo">
+                <h2>Find Your TDEE</h2>
+                <p>Find out your Total Daily Energy Expenditure (TDEE) by clicking on the button below. If you're
+                    unsure of what TDEE is, please refer to the article on "The Basis of All Diets: Energy
+                    Conservation." Finding your TDEE will help you tremendously when tracking calories</p>
+                <button onclick="oneModal(4)" id="messenger1" class="messengerClass">FIND OUT</button>
+            </div>
+        </div>
+
+        <h1>Program Templates</h1>
+        <hr>
+        <div class="items">
+            <div class="firstItem">
+                <img src="../images/ProgramTemplate.png" alt="">
+            </div>
+            <div class="firstItemInfo">
+                <h2>Become an Athlete</h2>
+                <p>Click the link below to get a copy of a 12-workout template that focuses on overall athletic
+                    development. Each block of training in the template has a focus on musclehypertrophy, strength,
+                    and power.</p>
+                <button onclick="oneModal(5)" id="messenger1" class="messengerClass">MORE INFO</button>
+            </div>
+
+            <div></div>
+
+            <div class="secondItem">
+                <img src="../images/Physique.png" alt="">
+            </div>
+            <div class="secondItemInfo">
+                <h2>Develop Your Physique</h2>
+                <p>Follow a 20-week program template with nutrition guidelines to help you get on track to the best
+                    shape of your life. It is all set up for you to understand how to get to the physique of your dream
+                    and most importantly, maintaining it.</p>
+                <button onclick="oneModal(6)" id="messenger1" class="messengerClass">MORE INFO</button>
+            </div>
+        </div>
+
+        <div class="items">
+            <div class="firstItem">
+                <img src="../images/Bench.png" alt="">
+            </div>
+            <div class="firstItemInfo">
+                <h2>Improve Your Bench</h2>
+                <p>Follow this 6-week bench program to break through plateaus and fix your poverty bench press. Before
+                    you follow this program, you should refine your bench press technique as this program puts a heavy
+                    emphasis on building strength.</p>
+                <button onclick="oneModal(7)" id="messenger1" class="messengerClass">MORE INFO</button>
+            </div>
+
+            <div></div>
+
+            <div class="secondItem">
+                <img src="../images/Squat.png" alt="">
+            </div>
+            <div class="secondItemInfo">
+                <h2>Improve Your Squat</h2>
+                <p>Increase your squat number with this 6-week program. Before you follow this program, you should
+                    refine your squat technique as this program puts a heavy emphasis on building strength. Choice of
+                    high-bar or low-bar squat is up to you</p>
+                <button onclick="oneModal(8)" id="messenger1" class="messengerClass">MORE INFO</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for the RMR -->
+    <div id="modalDesign3" class="modalDesignClass">
+        <div id="modalContent3" class="modalContentClass">
+            <div id="modalClose3" class="modalCloseClass" onclick="closeModal(3)">close</div>
+            <form id="RMR" class="data">
+                <input id="weight" type="text" placeholder="weight (lbs)">
+                <input id="height" type="text" placeholder="height (in)">
+                <input id="age" type="text" placeholder="age">
+            </form>
+            <button onclick="RMR()">Calculate RMR</button>
+            <br>
+            <h4 id="RMRresult" class="result">Your Resting Metabolic Rate is:</h4>
+            <h4 id="empty" class="result">0000 kcal</h4>
+            <p>*Note: This Harris-Benedict equation was used to calculate the output</p>
+        </div>
+    </div>
+    <!-- Modal for the RMR -->
+
+    <!-- Modal for the TDEE -->
+    <div id="modalDesign4" class="modalDesignClass">
+        <div id="modalContent4" class="modalContentClass">
+            <div id="modalClose4" class="modalCloseClass" onclick="closeModal(4)">close</div>
+            <form id="TDEE" class="data">
+                <input id="RMRData" type="text" placeholder="RMR (kcal)">
+            </form>
+            <button onclick="sedentary()">Sedentary, little to no exercise</button>
+            <button onclick="Lactive()">Lightly active, little exercise 1-3 days a week</button>
+            <button onclick="Mactive()">Moderately active, moderate exercise 3-5 days a week</button>
+            <button onclick="Vactive()">Very active, hard exercise 6-7 days a week</button>
+            <button onclick="Eactive()">Extremely active, twice a day</button>
+            <h4 class="result">Your Total Daily Energy Expenditure is:</h4>
+            <h4 id="TDEEresult" class="result">0000 kcal</h4>
+        </div>
+    </div>
+    <!-- Modal for the TDEE -->
+
+    <!-- Modal for Athlete Program -->
+    <div id="modalDesign5" class="modalDesignClass">
+        <div id="modalContent5" class="modalContentClass">
+            <div id="modalClose5" class="modalCloseClass" onclick="closeModal(5)">close</div>
+            <p>oops! I apologize for the inconvenience but the program that you are looking for is no longer available.
+            </p>
+        </div>
+    </div>
+    <!-- Modal for Athlete Program -->
+    <!-- Modal for Physique Program -->
+    <div id="modalDesign6" class="modalDesignClass">
+        <div id="modalContent6" class="modalContentClass">
+            <div id="modalClose6" class="modalCloseClass" onclick="closeModal(6)">close</div>
+            <p>oops! I apologize for the inconvenience but the program that you are looking for is no longer available.
+            </p>
+        </div>
+    </div>
+    <!-- Modal for Physique Program -->
+    <!-- Modal for Bench Program -->
+    <div id="modalDesign7" class="modalDesignClass">
+        <div id="modalContent7" class="modalContentClass">
+            <div id="modalClose7" class="modalCloseClass" onclick="closeModal(7)">close</div>
+            <p>oops! I apologize for the inconvenience but the program that you are looking for is no longer available.
+            </p>
+        </div>
+    </div>
+    <!-- Modal for Bench Program -->
+    <!-- Modal for Squat Program -->
+    <div id="modalDesign8" class="modalDesignClass">
+        <div id="modalContent8" class="modalContentClass">
+            <div id="modalClose8" class="modalCloseClass" onclick="closeModal(8)">close</div>
+            <p>oops! I apologize for the inconvenience but the program that you are looking for is no longer available.
+            </p>
+        </div>
+    </div>
+    <!-- Modal for Squat Program -->
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
