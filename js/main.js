@@ -100,16 +100,16 @@ canvas.width = window.innerWidth;
 let context = canvas.getContext("2d"); // creates a 2D object
 let x = Math.random() * innerWidth; //sets the location of the circle in the x-axis random within the length of innerWidth
 let y = Math.random() * innerHeight; //sets the location of the circle in the y-axis random within the length of innerHeight
-let velocityY = 10; // how fast the circle is moving in the y-axis
-let velocityX = 10; // how fast the circle is moving in the x-axis
+let velocityY = 50; // how fast the circle is moving in the y-axis
+let velocityX = 50; // how fast the circle is moving in the x-axis
 let w = 256;
 let h = 256;
 
 let move = () => {
-    requestAnimationFrame(move);    // Repeat the function over and over like a loop
-    context.clearRect(0, 0, innerWidth, innerHeight);   // This will clear the previous position as the image moves
+    requestAnimationFrame(move);   // Repeat the function over and over like a loop
+    // context.clearRect(0, 0, innerWidth, innerHeight);   // This will clear the previous position as the image moves
 
-    context.beginPath();    // The image will now begin moving in a set path
+    // context.beginPath();    // The image will now begin moving in a set path
     context.rect(x, y, w, h);   // This is the size of the rectangle
     // context.arc(x, y, radius, 0, Math.PI * 2, false);
     const img = document.getElementById("jordan");
