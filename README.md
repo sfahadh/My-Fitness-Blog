@@ -40,13 +40,13 @@ The services page will display two types of services that I can provide. One is,
 
 The about me page is basically about myself. On the top part of the page, I talked about the built of this page and in the second part, I go into my background as a fitness professional. Below those two I go over my passion and then my mission statement.
 
-### Products
+### Products Page
 
 In the products page, I broke it down into 2 parts, one for calculating Total Daily Energy Expenditure (TDEE) and the other are program templates. Each of those parts have subsections. The first part has 2 and the second part has 4. Each of those subsections follow the same format, an image to the left, a header, a text discription under the header and then under the description is a button, which is all to the right of the image. In the first part, the user can find their Resting Metabolic Rate (RMR) by clicking on the button under the RMR header and text description. This will lead to a modal pop-up, which then asks for the user's input. There is a button that will calculate the RMR base on the user's input. With that generated RMR, the user can find his/her TDEE by clicking on the next modal about TDEE. From there, the user selects a number of options based on his/her activity level and give them their TDEE depending on which options he/she chose. 
 
 In the second part about the program templates, each of the modal will have the same message. This part is more of a blueprint for future changes when I do modify it and add actual programs to these subsections. 
 
-### Contact
+### Contacts Page
 
 In the contact page, the user can contact me by first filling out a form and then clicking on the submit button. This will lead to a pop-up modal which will just display message. No other actions will occur. 
 
