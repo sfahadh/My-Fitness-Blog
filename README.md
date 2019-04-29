@@ -12,11 +12,11 @@ The navbar has a total of 10 links. There are 6 links that will take the user to
 
 On the far left of the navbar is an icon with some transition effect. It doesn't do anything else, it is just a representation or logo of my blog. 
 
-### First Page
+### Fahad Hussain Page
 
 The first page is the landing page, this is the only page where I added some humor. But when I recreate this, the theme of the landing page will be removed to something more professional. The background image is a batman and robin meme related to fitness. There is an image of Michael Jordan crying and it is bouncing throughout the webpage. In the center of it all is a picture of me, which will take you to a page about me. Right next to the picture of me is a text of what this webpage is and what to expect from it. Also, in one of the links of the navbar, it displays my full name, "Fahad Hussain." This link will take the user back to this page, the landing page.
 
-### Second Page
+### Articles Page
 
 The second page is the articles page. The articles page contains a slideshow and three links. The three links will take the user to three different articles. The slideshow has arrow buttons on the left and right side of the image. These arrows will display the next or previous image depending on which arrow buttons is clicked. The three links are within an article card. The article card contains the title of the article, an image in reference to the article, and a brief description of the article. There is also a button underneath the description, which will link to the article. 
 
